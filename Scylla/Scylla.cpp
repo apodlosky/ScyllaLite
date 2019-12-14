@@ -4,7 +4,6 @@
 #include "SystemInformation.h"
 #include "ProcessAccessHelp.h"
 
-PluginLoader Scylla::plugins;
 ProcessLister Scylla::processLister;
 
 const WCHAR Scylla::DEBUG_LOG_FILENAME[] = L"Scylla_debug.log";

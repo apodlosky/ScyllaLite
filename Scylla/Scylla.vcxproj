@@ -280,19 +280,15 @@
   <ItemGroup>
     <ClCompile Include="ApiReader.cpp" />
     <ClCompile Include="DeviceNameResolver.cpp" />
-    <ClCompile Include="DllInjection.cpp" />
-    <ClCompile Include="DllInjectionPlugin.cpp" />
     <ClCompile Include="FunctionExport.cpp" />
     <ClCompile Include="IATReferenceScan.cpp" />
     <ClCompile Include="IATSearch.cpp" />
     <ClCompile Include="ImportRebuilder.cpp" />
     <ClCompile Include="ImportsHandling.cpp" />
     <ClCompile Include="Logger.cpp" />
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="NativeWinApi.cpp" />
     <ClCompile Include="PeParser.cpp" />
     <ClCompile Include="PeRebuild.cpp" />
-    <ClCompile Include="PluginLoader.cpp" />
     <ClCompile Include="ProcessAccessHelp.cpp" />
     <ClCompile Include="ProcessLister.cpp" />
     <ClCompile Include="Scylla.cpp" />
@@ -304,8 +300,6 @@
     <ClInclude Include="ApiReader.h" />
     <ClInclude Include="Architecture.h" />
     <ClInclude Include="DeviceNameResolver.h" />
-    <ClInclude Include="DllInjection.h" />
-    <ClInclude Include="DllInjectionPlugin.h" />
     <ClInclude Include="FunctionExport.h" />
     <ClInclude Include="IATReferenceScan.h" />
     <ClInclude Include="IATSearch.h" />
@@ -315,7 +309,6 @@
     <ClInclude Include="NativeWinApi.h" />
     <ClInclude Include="PeParser.h" />
     <ClInclude Include="PeRebuild.h" />
-    <ClInclude Include="PluginLoader.h" />
     <ClInclude Include="ProcessAccessHelp.h" />
     <ClInclude Include="ProcessLister.h" />
     <ClInclude Include="Scylla.h" />

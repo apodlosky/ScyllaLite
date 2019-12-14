@@ -21,9 +21,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ProcessLister.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -34,15 +31,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ProcessAccessHelp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DllInjection.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DllInjectionPlugin.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PluginLoader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="NativeWinApi.cpp">
@@ -98,15 +86,6 @@
     <ClInclude Include="ProcessAccessHelp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DllInjectionPlugin.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DllInjection.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PluginLoader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="NativeWinApi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -140,9 +119,6 @@
     <ClInclude Include="Logger.h">
       <Filter>Header Files\Helper</Filter>
     </ClInclude>
-    <ClInclude Include="Scylla.h">
-      <Filter>Header Files\Helper</Filter>
-    </ClInclude>
     <ClInclude Include="ImportsHandling.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -150,6 +126,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Thunks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scylla.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
