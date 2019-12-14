@@ -279,7 +279,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ApiReader.cpp" />
-    <ClCompile Include="Architecture.cpp" />
     <ClCompile Include="Configuration.cpp" />
     <ClCompile Include="ConfigurationHolder.cpp" />
     <ClCompile Include="DeviceNameResolver.cpp" />

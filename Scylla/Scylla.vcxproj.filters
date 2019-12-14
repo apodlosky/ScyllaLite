@@ -63,9 +63,6 @@
     <ClCompile Include="DeviceNameResolver.cpp">
       <Filter>Source Files\Helper</Filter>
     </ClCompile>
-    <ClCompile Include="Architecture.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="PeParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
