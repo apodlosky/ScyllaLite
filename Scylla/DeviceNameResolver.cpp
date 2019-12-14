@@ -15,27 +15,27 @@ DeviceNameResolver::~DeviceNameResolver()
 
 void DeviceNameResolver::initDeviceNameList()
 {
-	TCHAR shortName[3] = {0};
-	TCHAR longName[MAX_PATH] = {0};
+	WCHAR shortName[3] = {0};
+	WCHAR longName[MAX_PATH] = {0};
 	HardDisk hardDisk;
 
-	shortName[1] = TEXT(':');
+	shortName[1] = L':';
 
 	deviceNameList.reserve(3);
 
-	for ( TCHAR shortD = TEXT('a'); shortD <= TEXT('z'); shortD++ )
+	for (WCHAR shortD = L'a'; shortD <= L'z'; shortD++ )
 	{
 		shortName[0] = shortD;
-		if (QueryDosDevice( shortName, longName, MAX_PATH ) > 0)
+		if (QueryDosDevice( shortName, longName, MAX_PATH) > 0)
 		{
-			hardDisk.shortName[0] = _totupper(shortD);
-			hardDisk.shortName[1] = TEXT(':');
+			hardDisk.shortName[0] = towupper(shortD);
+			hardDisk.shortName[1] = L':';
 			hardDisk.shortName[2] = 0;
 
-			hardDisk.longNameLength = _tcslen(longName);
+			hardDisk.longNameLength = wcslen(longName);
 
 			
-			_tcscpy_s(hardDisk.longName, longName);
+			wcscpy_s(hardDisk.longName, MAX_PATH, longName);
 			deviceNameList.push_back(hardDisk);
 		}
 	}
@@ -43,14 +43,14 @@ void DeviceNameResolver::initDeviceNameList()
     fixVirtualDevices();
 }
 
-bool DeviceNameResolver::resolveDeviceLongNameToShort(const TCHAR * sourcePath, TCHAR * targetPath)
+bool DeviceNameResolver::resolveDeviceLongNameToShort(const WCHAR* sourcePath, WCHAR* targetPath)
 {
 	for (unsigned int i = 0; i < deviceNameList.size(); i++)
 	{
-		if (!_tcsnicmp(deviceNameList[i].longName, sourcePath, deviceNameList[i].longNameLength) && sourcePath[deviceNameList[i].longNameLength] == TEXT('\\'))
+		if (!_wcsnicmp(deviceNameList[i].longName, sourcePath, deviceNameList[i].longNameLength) && sourcePath[deviceNameList[i].longNameLength] == L'\\')
 		{
-			_tcscpy_s(targetPath, MAX_PATH, deviceNameList[i].shortName);
-			_tcscat_s(targetPath, MAX_PATH, sourcePath + deviceNameList[i].longNameLength);
+			wcscpy_s(targetPath, MAX_PATH, deviceNameList[i].shortName);
+			wcscat_s(targetPath, MAX_PATH, sourcePath + deviceNameList[i].longNameLength);
 			return true;
 		}
 	}

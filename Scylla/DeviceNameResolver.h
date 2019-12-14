@@ -5,12 +5,12 @@
 
 #include <Windows.h>
 #include <vector>
-#include <tchar.h>
 
-class HardDisk {
+class HardDisk 
+{
 public:
-	TCHAR shortName[3];
-	TCHAR longName[MAX_PATH];
+	WCHAR shortName[3];
+	WCHAR longName[MAX_PATH];
 	size_t longNameLength;
 };
 
@@ -19,7 +19,7 @@ class DeviceNameResolver
 public:
 	DeviceNameResolver();
 	~DeviceNameResolver();
-	bool resolveDeviceLongNameToShort(const TCHAR * sourcePath, TCHAR * targetPath);
+	bool resolveDeviceLongNameToShort(const WCHAR* sourcePath, WCHAR* targetPath);
 private:
 	std::vector<HardDisk> deviceNameList;
 
