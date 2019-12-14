@@ -1,22 +1,17 @@
 #include "StringConversion.h"
-//#include <cstdlib>
-#include <atlbase.h> 
-#include <atlconv.h>
+#include <cstdlib>
+#include <cstring>
 
-const char* StringConversion::ToASCII(const wchar_t* str, char* buf, size_t bufsize)
+const char* StringConversion::ToASCII(const wchar_t* str, char* buf, size_t buf_count)
 {
-	//wcstombs(buf, str, bufsize);
-	ATL::CW2A str_a = str;
-	strncpy_s(buf, bufsize, str_a, bufsize);
-	buf[bufsize - 1] = '\0';
+	size_t length = wcslen(str);
+	wcstombs_s(nullptr, buf, buf_count, str, length);
 	return buf;
 }
 
-const wchar_t* StringConversion::ToUTF16(const char* str, wchar_t* buf, size_t bufsize)
+const wchar_t* StringConversion::ToUTF16(const char* str, wchar_t* buf, size_t buf_count)
 {
-	//mbstowcs_s(buf, str, bufsize);
-	ATL::CA2W str_w = str;
-	wcsncpy_s(buf, bufsize, str_w, bufsize);
-	buf[bufsize - 1] = L'\0';
+	size_t length = strlen(str);
+	mbstowcs_s(nullptr, buf, buf_count, str, length);
 	return buf;
 }
