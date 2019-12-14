@@ -24,6 +24,6 @@ class SystemInformation
 {
 public:
 
-	static OPERATING_SYSTEM currenOS;
+	static OPERATING_SYSTEM currentOS;
 	static bool getSystemInformation();
 };

@@ -1188,7 +1188,7 @@ bool ApiReader::addNotFoundApiToModuleList(DWORD_PTR iatAddressVA, DWORD_PTR api
 
 bool ApiReader::isApiBlacklisted( const char * functionName )
 {
-	if (SystemInformation::currenOS < WIN_VISTA_32)
+	if (SystemInformation::currentOS < WIN_VISTA_32)
 	{
 		if (!strcmp(functionName, "RestoreLastError"))
 		{
@@ -1206,7 +1206,7 @@ bool ApiReader::isApiBlacklisted( const char * functionName )
 
 
 	/*#ifdef _WIN64
-	else if (SystemInformation::currenOS == WIN_XP_64 && !strcmp(functionName, "DecodePointer"))
+	else if (SystemInformation::currentOS == WIN_XP_64 && !strcmp(functionName, "DecodePointer"))
 	{
 		return true;
 	}
