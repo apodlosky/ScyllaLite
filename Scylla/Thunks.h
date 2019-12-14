@@ -3,11 +3,6 @@
 #include <windows.h>
 #include <map>
 
-// WTL
-#include <atlbase.h>
-#include <atlapp.h>
-#include <atlctrls.h> // CTreeItem
-
 class ImportThunk
 {
 public:
@@ -20,8 +15,6 @@ public:
 	WORD hint;
 	bool valid;
 	bool suspect;
-
-	CTreeItem hTreeItem;
 	DWORD_PTR key;
 
 	void invalidate();
@@ -34,8 +27,6 @@ public:
 	std::map<DWORD_PTR, ImportThunk> thunkList;
 
 	DWORD_PTR firstThunk;
-
-	CTreeItem hTreeItem;
 	DWORD_PTR key;
 
 	DWORD_PTR getFirstThunk() const;

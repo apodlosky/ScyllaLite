@@ -288,16 +288,19 @@
     <ClCompile Include="IATReferenceScan.cpp" />
     <ClCompile Include="IATSearch.cpp" />
     <ClCompile Include="ImportRebuilder.cpp" />
+    <ClCompile Include="ImportsHandling.cpp" />
     <ClCompile Include="Logger.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NativeWinApi.cpp" />
     <ClCompile Include="PeParser.cpp" />
+    <ClCompile Include="PeRebuild.cpp" />
     <ClCompile Include="PluginLoader.cpp" />
     <ClCompile Include="ProcessAccessHelp.cpp" />
     <ClCompile Include="ProcessLister.cpp" />
     <ClCompile Include="Scylla.cpp" />
     <ClCompile Include="StringConversion.cpp" />
     <ClCompile Include="SystemInformation.cpp" />
+    <ClCompile Include="Thunks.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ApiReader.h" />
@@ -311,9 +314,11 @@
     <ClInclude Include="IATReferenceScan.h" />
     <ClInclude Include="IATSearch.h" />
     <ClInclude Include="ImportRebuilder.h" />
+    <ClInclude Include="ImportsHandling.h" />
     <ClInclude Include="Logger.h" />
     <ClInclude Include="NativeWinApi.h" />
     <ClInclude Include="PeParser.h" />
+    <ClInclude Include="PeRebuild.h" />
     <ClInclude Include="PluginLoader.h" />
     <ClInclude Include="ProcessAccessHelp.h" />
     <ClInclude Include="ProcessLister.h" />
