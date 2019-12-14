@@ -180,12 +180,6 @@ bool ProcessAccessHelp::readMemoryPartlyFromProcess(DWORD_PTR address, SIZE_T si
 	return returnValue;
 }
 
-#ifdef _WIN64
-#define bridge L"x64bridge.dll"
-#else
-#define bridge L"x32bridge.dll"
-#endif //_WIN64
-
 bool ProcessAccessHelp::writeMemoryToProcess(DWORD_PTR address, SIZE_T size, LPVOID dataBuffer)
 {
 	SIZE_T lpNumberOfBytesWritten = 0;
@@ -196,12 +190,6 @@ bool ProcessAccessHelp::writeMemoryToProcess(DWORD_PTR address, SIZE_T size, LPV
 #endif
 		return false;
 	}
-
-	static auto hBridge = GetModuleHandleW(bridge);
-	static auto DbgMemWrite = (bool(__cdecl*)(DWORD_PTR, LPVOID, SIZE_T))GetProcAddress(hBridge, "DbgMemWrite");
-	static auto DbgGetProcessId = (DWORD(__cdecl*)())GetProcAddress(hBridge, "DbgGetProcessId");
-	if(DbgMemWrite && DbgGetProcessId && DbgGetProcessId() == dwProcessId)
-		return DbgMemWrite(address, dataBuffer, size);
 
 	return (WriteProcessMemory(hProcess,(LPVOID)address, dataBuffer, size,&lpNumberOfBytesWritten) != FALSE);
 }
@@ -219,12 +207,6 @@ bool ProcessAccessHelp::readMemoryFromProcess(DWORD_PTR address, SIZE_T size, LP
 #endif
 		return returnValue;
 	}
-
-	static auto hBridge = GetModuleHandleW(bridge);
-	static auto DbgMemRead = (bool(__cdecl*)(DWORD_PTR, LPVOID, SIZE_T))GetProcAddress(hBridge, "DbgMemRead");
-	static auto DbgGetProcessId = (DWORD(__cdecl*)())GetProcAddress(hBridge, "DbgGetProcessId");
-	if(DbgMemRead && DbgGetProcessId && DbgGetProcessId() == dwProcessId)
-		return DbgMemRead(address, dataBuffer, size);
 
 	if (!ReadProcessMemory(hProcess, (LPVOID)address, dataBuffer, size, &lpNumberOfBytesRead))
 	{

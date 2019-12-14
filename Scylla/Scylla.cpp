@@ -4,7 +4,6 @@
 #include "SystemInformation.h"
 #include "ProcessAccessHelp.h"
 
-ConfigurationHolder Scylla::config(L"Scylla.ini");
 PluginLoader Scylla::plugins;
 ProcessLister Scylla::processLister;
 
