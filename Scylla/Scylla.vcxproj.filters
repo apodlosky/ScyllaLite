@@ -5,9 +5,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Header Files\Helper">
-      <UniqueIdentifier>{94d7cf3b-0d27-4bd6-b08f-e5894e02ef30}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -16,14 +13,8 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Source Files\Helper">
-      <UniqueIdentifier>{bbdfcdb4-3526-43c4-8984-da0f635cc93b}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ProcessLister.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ApiReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -42,23 +33,14 @@
     <ClCompile Include="StringConversion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DeviceNameResolver.cpp">
-      <Filter>Source Files\Helper</Filter>
-    </ClCompile>
     <ClCompile Include="PeParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ImportRebuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FunctionExport.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="IATReferenceScan.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Logger.cpp">
-      <Filter>Source Files\Helper</Filter>
     </ClCompile>
     <ClCompile Include="ImportsHandling.cpp">
       <Filter>Source Files</Filter>
@@ -72,11 +54,14 @@
     <ClCompile Include="Scylla.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceNameResolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ProcessLister.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ApiReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -92,14 +77,8 @@
     <ClInclude Include="SystemInformation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TreeImportExport.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="StringConversion.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DeviceNameResolver.h">
-      <Filter>Header Files\Helper</Filter>
     </ClInclude>
     <ClInclude Include="Architecture.h">
       <Filter>Header Files</Filter>
@@ -110,14 +89,8 @@
     <ClInclude Include="ImportRebuilder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FunctionExport.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="IATReferenceScan.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Logger.h">
-      <Filter>Header Files\Helper</Filter>
     </ClInclude>
     <ClInclude Include="ImportsHandling.h">
       <Filter>Header Files</Filter>
@@ -129,6 +102,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Scylla.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceNameResolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
