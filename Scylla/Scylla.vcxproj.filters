@@ -45,16 +45,10 @@
     <ClCompile Include="PluginLoader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ConfigurationHolder.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="NativeWinApi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SystemInformation.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Configuration.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="StringConversion.cpp">
@@ -78,9 +72,6 @@
     <ClCompile Include="Logger.cpp">
       <Filter>Source Files\Helper</Filter>
     </ClCompile>
-    <ClCompile Include="Scylla.cpp">
-      <Filter>Source Files\Helper</Filter>
-    </ClCompile>
     <ClCompile Include="ImportsHandling.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -88,6 +79,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Thunks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scylla.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -102,9 +96,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ProcessAccessHelp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ConfigurationHolder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DllInjectionPlugin.h">
@@ -123,9 +114,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TreeImportExport.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Configuration.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StringConversion.h">

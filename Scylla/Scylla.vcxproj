@@ -279,8 +279,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ApiReader.cpp" />
-    <ClCompile Include="Configuration.cpp" />
-    <ClCompile Include="ConfigurationHolder.cpp" />
     <ClCompile Include="DeviceNameResolver.cpp" />
     <ClCompile Include="DllInjection.cpp" />
     <ClCompile Include="DllInjectionPlugin.cpp" />
@@ -305,8 +303,6 @@
   <ItemGroup>
     <ClInclude Include="ApiReader.h" />
     <ClInclude Include="Architecture.h" />
-    <ClInclude Include="Configuration.h" />
-    <ClInclude Include="ConfigurationHolder.h" />
     <ClInclude Include="DeviceNameResolver.h" />
     <ClInclude Include="DllInjection.h" />
     <ClInclude Include="DllInjectionPlugin.h" />
