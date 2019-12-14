@@ -5,9 +5,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Header Files\GUI">
-      <UniqueIdentifier>{e037d0d5-35ad-4034-83db-746a56a4fee7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Helper">
       <UniqueIdentifier>{94d7cf3b-0d27-4bd6-b08f-e5894e02ef30}</UniqueIdentifier>
     </Filter>
@@ -19,9 +16,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Source Files\GUI">
-      <UniqueIdentifier>{6f76186f-b79c-41e2-8939-05d9de028aad}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Helper">
       <UniqueIdentifier>{bbdfcdb4-3526-43c4-8984-da0f635cc93b}</UniqueIdentifier>
     </Filter>
@@ -30,20 +24,8 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MainGui.cpp">
-      <Filter>Source Files\GUI</Filter>
-    </ClCompile>
-    <ClCompile Include="Logger.cpp">
-      <Filter>Source Files\GUI</Filter>
-    </ClCompile>
     <ClCompile Include="ProcessLister.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PickDllGui.cpp">
-      <Filter>Source Files\GUI</Filter>
-    </ClCompile>
-    <ClCompile Include="ImportsHandling.cpp">
-      <Filter>Source Files\GUI</Filter>
     </ClCompile>
     <ClCompile Include="ApiReader.cpp">
       <Filter>Source Files</Filter>
@@ -66,29 +48,11 @@
     <ClCompile Include="ConfigurationHolder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DisassemblerGui.cpp">
-      <Filter>Source Files\GUI</Filter>
-    </ClCompile>
     <ClCompile Include="NativeWinApi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SystemInformation.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AboutGui.cpp">
-      <Filter>Source Files\GUI</Filter>
-    </ClCompile>
-    <ClCompile Include="OptionsGui.cpp">
-      <Filter>Source Files\GUI</Filter>
-    </ClCompile>
-    <ClCompile Include="PickApiGui.cpp">
-      <Filter>Source Files\GUI</Filter>
-    </ClCompile>
-    <ClCompile Include="TreeImportExport.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Scylla.cpp">
-      <Filter>Source Files\GUI</Filter>
     </ClCompile>
     <ClCompile Include="Configuration.cpp">
       <Filter>Source Files</Filter>
@@ -96,17 +60,11 @@
     <ClCompile Include="StringConversion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DumpMemoryGui.cpp">
-      <Filter>Source Files\GUI</Filter>
-    </ClCompile>
     <ClCompile Include="DeviceNameResolver.cpp">
       <Filter>Source Files\Helper</Filter>
     </ClCompile>
     <ClCompile Include="Architecture.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DumpSectionGui.cpp">
-      <Filter>Source Files\GUI</Filter>
     </ClCompile>
     <ClCompile Include="PeParser.cpp">
       <Filter>Source Files</Filter>
@@ -117,31 +75,19 @@
     <ClCompile Include="FunctionExport.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DonateGui.cpp">
-      <Filter>Source Files\GUI</Filter>
-    </ClCompile>
     <ClCompile Include="IATReferenceScan.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Source Files\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Scylla.cpp">
+      <Filter>Source Files\Helper</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MainGui.h">
-      <Filter>Header Files\GUI</Filter>
-    </ClInclude>
-    <ClInclude Include="Logger.h">
-      <Filter>Header Files\GUI</Filter>
-    </ClInclude>
     <ClInclude Include="ProcessLister.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PickDllGui.h">
-      <Filter>Header Files\GUI</Filter>
-    </ClInclude>
-    <ClInclude Include="ImportsHandling.h">
-      <Filter>Header Files\GUI</Filter>
     </ClInclude>
     <ClInclude Include="ApiReader.h">
       <Filter>Header Files</Filter>
@@ -151,9 +97,6 @@
     </ClInclude>
     <ClInclude Include="ProcessAccessHelp.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Thunks.h">
-      <Filter>Header Files\GUI</Filter>
     </ClInclude>
     <ClInclude Include="ConfigurationHolder.h">
       <Filter>Header Files</Filter>
@@ -167,43 +110,19 @@
     <ClInclude Include="PluginLoader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DisassemblerGui.h">
-      <Filter>Header Files\GUI</Filter>
-    </ClInclude>
     <ClInclude Include="NativeWinApi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SystemInformation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AboutGui.h">
-      <Filter>Header Files\GUI</Filter>
-    </ClInclude>
-    <ClInclude Include="OptionsGui.h">
-      <Filter>Header Files\GUI</Filter>
-    </ClInclude>
-    <ClInclude Include="PickApiGui.h">
-      <Filter>Header Files\GUI</Filter>
-    </ClInclude>
-    <ClInclude Include="multitree.h">
-      <Filter>Header Files\GUI</Filter>
-    </ClInclude>
     <ClInclude Include="TreeImportExport.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scylla.h">
-      <Filter>Header Files\GUI</Filter>
     </ClInclude>
     <ClInclude Include="Configuration.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StringConversion.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DumpMemoryGui.h">
-      <Filter>Header Files\GUI</Filter>
-    </ClInclude>
-    <ClInclude Include="hexedit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DeviceNameResolver.h">
@@ -212,23 +131,26 @@
     <ClInclude Include="Architecture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DumpSectionGui.h">
-      <Filter>Header Files\GUI</Filter>
-    </ClInclude>
     <ClInclude Include="PeParser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ImportRebuilder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DonateGui.h">
-      <Filter>Header Files\GUI</Filter>
-    </ClInclude>
     <ClInclude Include="FunctionExport.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="IATReferenceScan.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Header Files\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Thunks.h">
+      <Filter>Header Files\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Scylla.h">
+      <Filter>Header Files\Helper</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
