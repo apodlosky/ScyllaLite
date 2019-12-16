@@ -2,9 +2,22 @@
 
 #include <windows.h>
 #include <vector>
-#include "DumpSectionGui.h"
 
-class PeFileSection {
+class PeSection
+{
+public:
+	WCHAR name[IMAGE_SIZEOF_SHORT_NAME + 1];
+	DWORD_PTR virtualAddress;
+	DWORD  virtualSize;
+	DWORD  rawAddress;
+	DWORD  rawSize;
+	DWORD characteristics;
+
+	bool isDumped;
+};
+
+class PeFileSection 
+{
 public:
 	IMAGE_SECTION_HEADER sectionHeader;
 	BYTE * data;

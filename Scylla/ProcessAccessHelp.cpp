@@ -2,6 +2,7 @@
 #include "ProcessAccessHelp.h"
 
 #include "Scylla.h"
+#include "DeviceNameResolver.h"
 #include "NativeWinApi.h"
 #include "PeParser.h"
 
